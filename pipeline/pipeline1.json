@@ -12,6 +12,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"tst": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
