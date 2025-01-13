@@ -1,0 +1,53 @@
+{
+	"name": "recRest",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "out",
+					"value": {
+						"value": "@pipeline().parameters.inputPam",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 120
+				}
+			}
+		],
+		"parameters": {
+			"inputPam": {
+				"type": "int"
+			}
+		},
+		"variables": {
+			"out": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-01-13T12:25:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
