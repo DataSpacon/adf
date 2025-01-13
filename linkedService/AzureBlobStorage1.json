@@ -1,0 +1,11 @@
+{
+	"name": "AzureBlobStorage1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://sta1301slawek.blob.core.windows.net/adf",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
