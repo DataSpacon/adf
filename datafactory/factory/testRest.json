@@ -1,0 +1,9 @@
+{
+	"name": "testRest",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5ee21c53-8de1-4b19-bfa8-bb2c8ae7ae3e",
+		"tenantId": "cd0999b3-13ed-4b44-9730-312d088c0797"
+	}
+}
